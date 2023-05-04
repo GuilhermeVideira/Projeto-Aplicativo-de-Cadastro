@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 
-.container {
+body {
     width: 100%;
     height: 100vh;
     display: flex;
-    border-radius: 11px;
-    justify-content: height;
-    box-shadow: 5px 5px 10px rgb(3s8, 0, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(38, 0, 255);
 }
 
 .fundo-video {
@@ -30,18 +43,23 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(100deg, transparent, rgb(255, 255, 255) 0%, transparent);
+    
 }
  
 .texto01 {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
      color: #ffffff;    
      font-size: 30px} 
-     
+
+.texto02 {font-family: Arial; 
+     color: #ffffff;    
+     font-size: 22px} 
+
 .form-quadrado {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+     background: linear-gradient(100deg, transparent, rgb(103, 21, 255) 0%, transparent);
     padding: 1rem;   
 }
 
@@ -50,6 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(100deg, transparent, rgb(103, 21, 255) 0%, transparent);
     padding: 0rem;
 }
 
@@ -63,15 +82,15 @@
     width: 100%;
     margin-top: 2.5rem;
     border: none;
-    background-color: #dcdcdcf1;
+    background-color: #9a0cecf1;
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .continue-button button:hover {
-    background-color: #000000f1;
-    transform: scale(1.5)
+    background-color: #0c2eecf1;
+    transform: scale(1.2)
 }
 
 .continue-button button a {
@@ -81,14 +100,8 @@
     color: #fff;
 }
 
-hr{
-  margin-top: 90%;
-  margin-bottom: 90%;
-  width: 90%;
-}
-
-p{
-  color: #ff0000;
-  font-size: 14pt;
-  text-align: center;
+h1
+ {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+     color: #ffffff;    
+     font-size: 30px}      
 }

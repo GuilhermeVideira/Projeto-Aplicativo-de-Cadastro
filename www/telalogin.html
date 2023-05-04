@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+
+    <link rel="stylesheet" href="./css/login.css">
+
+</head>
+<body>
+
+    <div class="fundo-video">
+			<video class="video" autoplay loop muted>
+				<source src="Video/VideoFundo.mp4" type="video/mp4" />
+			</video>
+		</div>
+
+    <div class="container">
+
+        <div class="form-quadrado"> </div>
+      
+        <div class="form">
+
+            <form action="#">
+
+                <div class="form-header">
+                    <div class="title">
+                         <span class="texto01">
+                        Login
+                         </span>
+                    </div>
+                 </div>
+
+           <div id='msgError'></div>
+
+                <span class="texto02">
+                Digite as informações para acessar:
+                </span>
+
+               <br> <br><br> 
+                
+                <div class="input-group">
+                    <div class="input-box">
+                        <label id="userLabel" for="lastname">Nome de úsuario 🧒🏻 </label>
+                        <input id="loginNome" type="text" name="name" placeholder="Digite o nome de úsuario" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label id="senhaLabel" for="password">Senha 🔒</label>
+                        <input id="loginSenha" type="password" name="password" placeholder="Digite sua senha" required>
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                      <button id="teste" type="button" class="button1" onclick="entrar();location.href='telaacesso.html';" value="Confirmar"> Acessar </button>
+                </div>
+
+           <br><center><div class='justify-center'> <hr> </div></center>
+
+<div class="cor">
+            <p> Não tem uma conta? <a href='telacadastro.html'> Cadastre-se </a> </p>
+</div>
+            </form>
+
+        </div>
+    </div>
+
+     <script src="js/main.js"></script>
+
+</body>
+</html>

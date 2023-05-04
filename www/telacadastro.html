@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+
+    <link rel="stylesheet" href="./css/cadastro.css">
+
+</head>
+
+<body>
+
+    <div class="fundo-video">
+			<video class="video" autoplay loop muted>
+				<source src="Video/VideoFundo.mp4" type="video/mp4" />
+			</video>
+		</div>
+
+    <div class="container">
+
+        <div class="form-quadrado"> </div>
+      
+        <div class="form">
+
+            <form action="#">
+
+                <div class="form-header">
+                    <div class="title">
+                         <span class="texto01">
+                        Cadastre-se
+                         </span>
+                    </div>
+                 </div>
+
+                  <div id='msgCadastro'></div> <br>
+            
+                <div class="input-group">
+                    <div class="input-box">
+                        <label id="labelNome" for="firstname">Nome 🧒🏻  </label>
+                        <input id="nome" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+                    <div class="input-box">
+                        <label id="labelUsuario" for="lastname">Nome de úsuario 🧒🏻  </label>
+                        <input id="Usuarioo" type="text" name="name" placeholder="Digite o nome de úsuario" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label id="labelSenha" for="password">Senha 🔒 </label>
+                        <input id="Senhaa" type="password" name="password" placeholder="Digite sua senha" required>
+                        <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="input-box">
+                        <label id="labelCconfirmSenha" for="confirmPassword">Confirme sua Senha 🔒 </label>
+                        <input id="confirmSenha" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                        <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+
+                <div class="continue-button">
+                    <button id="teste" type="button" class="button1" onclick="cadastrar();location.href='telalogin.html';" value="Confirmar"> Cadastrar </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+ <script src="js/main.js"></script>
+
+</body>
+</html>
